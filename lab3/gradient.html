@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: black;
+        }
+
+        .power-bar {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 500px;
+            height: 50px;
+            border-radius: 50px;
+            background-color: #fff;
+            box-shadow: 0 0 15px #fff;
+        }
+
+        .energy {
+            width: 85%;
+            height: 100%;
+            border-radius: inherit;
+            background: linear-gradient(to right, orange 10%, yellow 30%, white);
+            box-shadow: 0 0 15px #ff9800;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="power-bar">
+        <div class="energy"></div>
+    </div>
+</body>
+
+</html>

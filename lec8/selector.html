@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+
+        }
+
+        #myid {
+            color: blueviolet;
+        }
+
+        .myclass {
+            color: brown;
+            text-shadow: 0 0 2px brown;
+        }
+
+        h2 {
+            color: rgb(102, 62, 10);
+        }
+
+        input[type="email"] {
+            border: 2px solid rgb(58, 49, 75);
+            border-radius: 5px;
+        }
+
+        input[type="password"] {
+            border: 2px solid rgb(58, 49, 75);
+            border-radius: 5px;
+        }
+
+        li[data="null"] {
+            background-color: rgb(11, 38, 97);
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Selector</h2>
+    <ul>
+        <li class="myclass">Item 1</li>
+        <li id="myid">Item 2</li>
+        <li class="myclass">Item 3</li>
+        <li data="null">Item 4</li>
+        <li>Item 5</li>
+    </ul>
+
+    <input type="email" placeholder="Email"><br />
+    <input type="password" placeholder="Password">
+
+</body>
+
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            container-type: inline-size;
+        }
+
+        p {
+            font-size: 45px;
+        }
+
+        /* @media (max-width:800px) {
+            p {
+                font-size: 25px;
+                background-color: bisque;
+            }
+        }
+
+        @media (max-width:500px) {
+            p {
+                font-size: 25px;
+                background-color: rgb(109, 27, 93);
+            }
+        } */
+        /* @media (min-width:500px) and (max-width:800px) {
+            p {
+                font-size: 25px;
+                background-color: rgb(14, 5, 95);
+            }
+        }
+
+        @media (min-width:800px),
+        (max-width:1000px) {
+            p {
+                font-size: 25px;
+                background-color: rgb(14, 5, 95);
+            }
+        } */
+        @container(width>500px) {
+            p {
+                font-size: 25px;
+                background-color: rgb(204, 149, 21);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <p>Hello World!</p>
+</body>
+
+</html>

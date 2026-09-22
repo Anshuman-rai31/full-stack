@@ -1,0 +1,27 @@
+
+.navbar {
+    background-color: hsl(263, 49%, 41%);
+    padding: 15px 30px;
+}
+
+.nav-links {
+    list-style: none; /* Removes bullet points */
+    display: flex;
+    gap: 25px; /* Space between links */
+}
+
+
+.nav-links a {
+    color: #ffffff;
+    text-decoration: none; /* Removes underline */
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    padding: 6px 12px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover effect */
+.nav-links a:hover {
+    background-color: #555;
+}

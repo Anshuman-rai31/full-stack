@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 15px;
+
+        }
+
+        mytag {
+            font-size: 40px;
+        }
+
+        #myid {
+            color: blueviolet;
+        }
+
+        .myclass {
+            color: brown;
+            text-shadow: 0 0 2px brown;
+        }
+
+        h2 {
+            color: rgb(102, 62, 10);
+        }
+
+        input {
+            font-size: 20px;
+        }
+
+        input[type="email"] {
+            border: 2px solid rgb(58, 49, 75);
+            border-radius: 5px;
+        }
+
+        input[type="password"] {
+            border: 2px solid rgb(58, 49, 75);
+            border-radius: 5px;
+        }
+
+        li[data="null"] {
+            background-color: rgb(11, 38, 97);
+        }
+
+        section h2 {
+            /*Type 1 Combination*/
+            color: aqua;
+        }
+
+        section>h2 {
+            /*Type 2 Combination*/
+            color: blue;
+        }
+
+        h2~p {
+            /*Type 3 Combination */
+            color: rgb(189, 67, 9);
+            font-size: 40px;
+            text-shadow: 0 0 2px rgb(189, 67, 9);
+        }
+
+        h2+p {
+            /*Type 4 Combination*/
+            color: rgb(78, 28, 205);
+            font-size: 35px;
+            text-shadow: 0 0 3px black;
+        }
+
+        p:hover {
+            color: blueviolet;
+            background-color: black;
+            border-width: 0px;
+            box-shadow: 3px 3px 5px black;
+        }
+
+        button {
+            color: blueviolet;
+            background-color: black;
+            border-width: 0px;
+        }
+
+        button:hover {
+            box-shadow: 3px 3px 5px rgb(171, 29, 29);
+
+        }
+
+        button:active {
+            box-shadow: 0px 0px 0px;
+            background-color: grey;
+        }
+
+        button:focus {
+            color: rgb(33, 173, 232);
+
+        }
+
+
+        input[type=checkbox] {
+            height: 50px;
+            width: 50px;
+        }
+
+        input:checked {
+            box-shadow: 3px 3px 5px;
+            accent-color: red;
+        }
+
+        a {
+            font-size: 40px;
+            font-weight: bold;
+
+        }
+
+        a:link {
+            color: red;
+        }
+
+        a:visited {
+            color: grey
+        }
+
+        a:hover {
+            color: rgb(102, 3, 3);
+            text-shadow: 3px 3px 5px black;
+
+        }
+
+        a:active {
+            color: rgb(194, 117, 17);
+        }
+
+        input {
+            font-size: 20px;
+            border-width: 0px 0px 3px 0px;
+            border-color: black;
+
+        }
+
+
+        input:required {
+            border-color: red;
+        }
+
+        input:optional {
+            border-color: green;
+        }
+
+        input:disabled {
+            border-color: blue;
+            background-color: grey;
+            color: white;
+        }
+
+        input:read-only {
+            background-color: #27c515;
+        }
+
+        input:read-write {
+            background-color: #4737f3;
+        }
+    </style>
+
+</head>
+
+<body>
+    <mytag>
+        This Is A Custom Tag.
+    </mytag>
+    <h2>Selector</h2>
+    <ul>
+        <li class="myclass">Item 1</li>
+        <li id="myid">Item 2</li>
+        <li class="myclass">Item 3</li>
+        <li data="null">Item 4</li>
+        <li>Item 5</li>
+        <li>Combinators</li>
+        <li>Pseudo-classes</li>
+        <li>Pseudo-elements</li>
+    </ul>
+    <br />
+    <input type="email" placeholder="Email"><br />
+    <input type="password" placeholder="Password">
+    <section>
+        <h2>Heading</h2>
+        <p>Para 1</p>
+        <p>Para 2</p>
+        <div>
+            <h2>Heading 2</h2>
+        </div>
+    </section>
+
+    <p>
+        Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello
+        Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello
+    </p>
+    <button type="button">Click It!</button>
+    <br />
+    <input type="checkbox">Click It!
+    <a href="#">LINK</a> <!--Pseudo Class-->
+
+    <form>
+
+        <input type="text" placeholder="First Name" required><br /><br />
+        <input type="text" placeholder="Middle Name"><br /><br />
+        <input type="text" placeholder="Last Name" required><br /><br />
+        <input type="text" value="Mathura" disabled><br /><br />
+
+        <input type="submit" value="Submit">
+
+    </form>
+
+
+
+
+
+</body>
+
+</html>
